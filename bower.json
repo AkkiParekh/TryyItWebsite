@@ -1,0 +1,25 @@
+{
+  "name": "tryyitwebsite",
+  "description": "Tryy It Website",
+  "main": "index.js",
+  "authors": [
+    "Ankit Parekh"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "TryyIt",
+    "3D",
+    "Fitting",
+    "Room",
+    "Solution"
+  ],
+  "homepage": "https://github.com/AkkiParekh/TryyItWebsite",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
