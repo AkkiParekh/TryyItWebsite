@@ -1,61 +1,28 @@
 <!DOCTYPE html>
-<html ng-app="tryyApp" lang="en" class="js canvas canvastext webgl no-touch geolocation hashchange history draganddrop websockets cssanimations csstransforms csstransforms3d video audio localstorage sessionstorage webworkers applicationcache svg svgclippaths">
+	<base href="/">
+	<html ng-app="tryyItApp">
+	<head>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="js/components/materialize/css/materialize.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="css/site.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
 
-<head>
-    <base href="/">
-    <title>TRYY IT: India's Best Virtual Fitting Mirror Solution</title>
-    
-    <link rel="apple-touch-icon" sizes="57x57"      href="favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60"      href="favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72"      href="favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76"      href="favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114"    href="favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120"    href="favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144"    href="favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152"    href="favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180"    href="favicons/apple-icon-180x180.png">
-    <link rel="icon"             sizes="192x192"    href="favicons/android-icon-192x192.png"    type="image/png">
-    <link rel="icon"             sizes="32x32"      href="favicons/favicon-32x32.png"           type="image/png">
-    <link rel="icon"             sizes="96x96"      href="favicons/favicon-96x96.png"           type="image/png">
-    <link rel="icon"             sizes="16x16"      href="favicons/favicon-16x16.png"           type="image/png">
-    <link rel="manifest"                            href="favicons/manifest.json">    
-    <link rel="shortcut icon"                       href="favicons/favicon.ico"                 type="image/x-icon">
-    <link rel="icon"                                href="favicons/favicon.ico"                 type="image/x-icon">
+	<body>
+		<main id="tryyLoader"></main>
+		<main id="tryyContent">
+			<header ng-include="'views/header.html'"></header>
+			<div ng-view class="mainWrapper"></div>
+			<footer ng-include="'views/footer.html'"></footer>
+		</main>
+		<script type="text/javascript" src="js/components/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/components/materialize/js/materialize.min.js"></script>
+		<script type="text/javascript" src="js/components/angular.min.js"></script>
+		<script type="text/javascript" src="js/components/angular-route.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
 
-    <meta http-equiv="Content-Type"         content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible"      content="IE=Edge">
-    <meta name="viewport"                   content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">    
-    <meta name="author"                     content="Virtual Techies Pvt Ltd">
-    <meta name="msapplication-TileColor"    content="#ffffff">
-    <meta name="msapplication-TileImage"    content="favicons/ms-icon-144x144.png">
-    <meta name="theme-color"                content="#ffffff">
-    <meta name="format-detection"           content="telephone=no">
-    <meta name="keywords"                   content="Virtual fitting, virtual fashion, virtual fitting mirror, virtual fitting room, augmented reality mirror">
-    <meta name="description"                content="TRYY IT Mirror &amp; FIT&#39;NSHOP combine to provide the best most realistic and accurate virtual fitting solution for both offline and online clothes retailers. Accurately analyze body size measurements to greatly reduce the number of items returned.">
-    <meta property="og:description"         content="TRYY IT Mirror &amp; FIT&#39;NSHOP combine to provide the best most realistic and accurate virtual fitting solution for both offline and online clothes retailers. Accurately analyze body size measurements to greatly reduce the number of items returned.">
-    <meta property="og:title"               content="TRYY IT Mirror: India&#39;s Best Virtual Fitting Mirror Solution">
-    <meta property="og:type"                content="image">
-    <meta property="og:url"                 content="/en/main">
-    <meta property="og:image"               content="favicons/favicon.ico">
-    
-    <link rel="stylesheet" href="css/production.min.css" type="text/css">
-</head>
-
-<body class="" data-locale="en" style="min-width:inherit;" data-page="main">    
-    <div id="wrap" class="contents_wrapper main en" style="opacity: 0.0;">
-        <header ng-include="'views/header.html'"></header>
-        <main class="animated fadeIn" ng-view></main>
-        <div ng-include="'views/footer.html'"></div>
-    </div>
-          
-    <script type="text/javascript" src="js/production.min.js"></script>
-    <script type="text/javascript" src="js/angular.js"></script>
-    <script type="text/javascript" src="js/angular-route.min.js"></script>
-    <script type="text/javascript" src="js/site.min.js"></script>
-    <script type="text/javascript" src="js/analytics.js"></script>
-    <script>
-        !function(e,t,a,n,c,s,o){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,s=t.createElement(a),o=t.getElementsByTagName(a)[0],s.async=1,s.src=n,o.parentNode.insertBefore(s,o)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-77559748-1","auto"),ga("send","pageview");
-    </script>
-</body>
-
+		<!-- Contollers -->
+		<script type="text/javascript" src="js/controllers/home.js"></script>
+		<script type="text/javascript" src="js/site.js"></script>
+	</body>
 </html>
