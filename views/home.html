@@ -25,7 +25,7 @@
 				</div>
 				<div class="col s12 m7 l7 l7">
 					<div class="img_cont" style="height:400px;">
-			            <a href="#" class="img_click_area" data-video-area="img/demovideo.mp4" data-video-cn-area="img/demovideo.mp4">
+			            <a ng-click="openDemoVideo()" class="img_click_area" data-video-area="https://player.vimeo.com/video/244612496" data-video-cn-area="https://player.vimeo.com/video/244612496">
 			                <div class="img_main_hightlight"></div>
 			                <div class="playbtn_cont">
 			                    <img src="img/btn_play_off.png" alt="play video">
@@ -37,3 +37,28 @@
 		</div>
 	</article>	
 </section>
+
+
+<div id="demoVideoModal" class="modal">
+	<div class="modal-content" style="padding:0;">
+		<div class="hide video-container-loader" style="min-height:50vh">
+			<div class="center" style="padding:3rem 0">
+				<div class="preloader-wrapper big active">
+				<div class="spinner-layer spinner-blue-only">
+				<div class="circle-clipper left">
+				<div class="circle"></div>
+				</div><div class="gap-patch">
+				<div class="circle"></div>
+				</div><div class="circle-clipper right">
+				<div class="circle"></div>
+				</div>
+				</div>
+				</div>
+				<p>Loading ...</p>
+			</div>
+		</div>
+		<div class="hide video-container">
+    		<iframe id="video" width="853" height="480" src="" frameborder="0" allowfullscreen></iframe>
+      	</div>
+	</div>
+</div>
