@@ -7817,6 +7817,9 @@ body.login {
 .page-template-page-homepage .homepage__content__icon.green{
     background-image: linear-gradient(-131deg, #00ff5a 0, #088038 100%)!important;
 }
+.page-template-page-homepage .homepage__content__icon.orange{
+    background-image: linear-gradient(-131deg, #FF9800 0, #b19469 100%)!important;
+}
 .page-template-page-homepage .homepage__content__icon {
     width: 80px;
     height: 80px;
@@ -7906,7 +7909,11 @@ body.login {
 .page-template-page-homepage .meetings .homepage__content__icon__wave.green {
     background-image: linear-gradient(-131deg,#4CAF50 0,#4CAF50 100%)!important;
 }
-.page-template-page-homepage .meetings .homepage__content__icon__wave {
+.page-template-page-homepage .pricing .homepage__content__icon__wave.orange {
+    background-image: linear-gradient(-131deg,#FFC107 0,#FF9800 100%)!important;
+}
+.page-template-page-homepage .meetings .homepage__content__icon__wave,
+.page-template-page-homepage .pricing .homepage__content__icon__wave {
     position: absolute;
     top: 0;
     left: 0;
