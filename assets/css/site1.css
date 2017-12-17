@@ -7935,6 +7935,23 @@ body.login {
     margin-bottom: -4rem
 }
 
+.page-template-page-homepage .demo{
+    margin: 10rem 0 5rem;
+}
+.page-template-page-homepage .demo::before{
+    position: absolute;
+    content:'';
+    display:block;
+    left:0;
+    height:600px;
+    width:100%;
+    background:#000;
+    opacity:0.5;
+}
+.page-template-page-homepage .demo img{
+    height:600px;
+}
+
 .page-template-page-homepage .time__graphic .first,
 .page-template-page-homepage .time__graphic .second{
     display:inline-block;
