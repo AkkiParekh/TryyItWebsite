@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>tech-24px-glyph-2_rotate</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tech-24px-glyph-2_rotate" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M24,8 L22,8 L22,7 C22,4.243 19.757,2 17,2 L16,2 L16,0 L17,0 C20.859,0 24,3.14 24,7 L24,8 Z" id="Shape"></path>
+            <path d="M8,24 L7,24 C3.141,24 0,20.86 0,17 L0,16 L2,16 L2,17 C2,19.757 4.243,22 7,22 L8,22 L8,24 Z" id="Shape"></path>
+            <path d="M16.243,22.728 L22.728,16.243 C23.898,15.073 23.898,13.17 22.728,12 L12,1.272 C10.83,0.102 8.927,0.102 7.757,1.272 L1.272,7.757 C0.102,8.927 0.102,10.83 1.272,12 L12,22.728 C13.17,23.898 15.073,23.898 16.243,22.728 Z M3.393,11.293 C3.002,10.902 3.002,10.269 3.393,9.879 L9.878,3.394 C10.269,3.003 10.902,3.003 11.292,3.394 L20.606,12.708 C20.997,13.099 20.997,13.732 20.606,14.122 L14.121,20.607 C13.73,20.998 13.097,20.998 12.707,20.607 L3.393,11.293 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

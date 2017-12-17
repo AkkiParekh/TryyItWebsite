@@ -1,0 +1,68 @@
+.error404 .signup {
+    display: none
+}
+.fourohfour {
+    position: relative;
+    z-index: 2
+}
+.fourohfour {
+    height: 900px;
+    height: 76vh;
+    text-align: left;
+    color: #fff;
+    position: relative
+}
+@media only screen and (min-width: 767px) {
+    .fourohfour {
+        text-align: center;
+        height: 85vh
+    }
+}
+.fourohfour article {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    z-index: 4;
+    width: 80%;
+    text-align: center;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%)
+}
+@media only screen and (min-width: 767px) {
+    .fourohfour article {
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%)
+    }
+}
+.fourohfour article p {
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-size: 1rem
+}
+@media only screen and (min-width: 767px) {
+    .fourohfour article p {
+        font-size: 1.6rem;
+        max-width: 400px;
+        margin: 30px auto 20px auto
+    }
+}
+.fourohfour article a {
+    margin-top: 2rem;
+    padding: 15px 25px 12px 25px;
+    border: 1px solid #474747;
+    border-radius: 40px;
+    color: #474747;
+    font-size: 1rem;
+    line-height: 1;
+    text-decoration: none;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    display: inline-block
+}
+.fourohfour article a:hover,
+.fourohfour article a:active,
+.fourohfour article a:focus {
+    color: #a63e68;
+    border-color: #a63e68
+}

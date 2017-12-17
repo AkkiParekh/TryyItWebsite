@@ -1,0 +1,94 @@
+#load {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999999999;
+    background-color: #f9f9f9
+}
+#load div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 27px;
+    width: 100px
+}
+@media only screen and (min-width: 1023px) {
+    #load div {
+        height: 45px;
+        width: 180px
+    }
+}
+#load img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0
+}
+#load img:first-child {
+    z-index: -2;
+    -webkit-animation: glitch .4s cubic-bezier(.25, .46, .45, .94) both infinite;
+    animation: glitch .4s cubic-bezier(.25, .46, .45, .94) both infinite;
+    opacity: .6
+}
+#load img:last-child {
+    z-index: -1;
+    -webkit-animation: glitch .4s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
+    animation: glitch .4s cubic-bezier(.25, .46, .45, .94) reverse both infinite
+}
+@-webkit-keyframes glitch {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+    20% {
+        -webkit-transform: translate(-1%, 1%);
+        transform: translate(-1%, 1%)
+    }
+    40% {
+        -webkit-transform: translate(-1%, -1%);
+        transform: translate(-1%, -1%)
+    }
+    60% {
+        -webkit-transform: translate(1%, 1%);
+        transform: translate(1%, 1%)
+    }
+    80% {
+        -webkit-transform: translate(1%, -1%);
+        transform: translate(1%, -1%)
+    }
+    to {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+}
+@keyframes glitch {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+    20% {
+        -webkit-transform: translate(-1%, 1%);
+        transform: translate(-1%, 1%)
+    }
+    40% {
+        -webkit-transform: translate(-1%, -1%);
+        transform: translate(-1%, -1%)
+    }
+    60% {
+        -webkit-transform: translate(1%, 1%);
+        transform: translate(1%, 1%)
+    }
+    80% {
+        -webkit-transform: translate(1%, -1%);
+        transform: translate(1%, -1%)
+    }
+    to {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+}
