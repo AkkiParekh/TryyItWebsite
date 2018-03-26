@@ -9,6 +9,7 @@
     <meta name="description" content="Tryy It - India's first retail-to-customer virtual fitting solution"/>
     <title>Tryy It : Trying on without taking off</title>
     
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fonts.css" data-minify="1" />
     <link rel="stylesheet" href="assets/css/bootstrap.css" data-minify="1" />
     <link rel="stylesheet" href="assets/css/site1.css" data-minify="1" />    
@@ -36,6 +37,8 @@
     
     <script async src='https://www.google-analytics.com/analytics.js'></script>
     <script src="assets/js/f92809baf834ebfc3feb4ff460b0e963.js" data-minify="1"></script>
+    <script src="assets/js/bootstrap.min.js" data-minify="1"></script>
+    
     
     <link rel='https://api.w.org/' href='https://www.brring.com/wp-json/' />
     <link rel="alternate" type="application/json+oembed" href="https://www.brring.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.brring.com%2F" />
@@ -49,12 +52,12 @@
         <header class="header" role="banner" itemscope="itemscope" item-type="http://schema.org/WPHeader">
             <div class="header__main">
                 <figure class="header__logo">
-                    <a href="http://tryyit.com/"></a> 
-                        <img src="https://akkiparekh.github.io/TRYY-IT-PITCH/img/newLogo.jpg" class="logo" alt="tryyit Logo" />
+                    <a href="http://tryyit.com/">
                         <div class="wordmark">
-                            <img src="assets/img/tryyIt_White.png" class="light" alt="tryyit Logo" /> 
-                            <img src="assets/img/tryyIt_Black.png" class="dark" alt="tryyit Logo" />
+                            <img src="assets/img/logoWhite.png" class="light" alt="tryyit Logo" /> 
+                            <img src="assets/img/logoBlack.png" class="dark" alt="tryyit Logo" />
                         </div>
+                    </a>
                 </figure>
                 <div class="hamburger"><span></span> <span></span></div>
                 <article>
@@ -63,7 +66,7 @@
                             <img src="" class="logo" alt="tryyit Logo" />
                         </a>
                         <ul class="navMenu">
-                            <li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="/features/">Features</a>
+                            <li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138"><a href="/features.html">Features</a>
                             </li>
                             <li id="menu-item-176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-176"><a href="/about/">About Us</a>
                             </li>
@@ -90,7 +93,7 @@
                     <h1 class="anim text-up">Shopping is more fun now...</h1>
                     <p class="anim text-up" data-wow-delay=".2s">India's first retail-to-customer virtual fitting solution</p>
                     <div class="anim text-up" data-wow-delay=".4s">
-                        <a class="bn6Ort7vDx9PX29">Download Brochure</a>
+                        <a class="brochure-btn"><span>Download Brochure</span></a>
                     </div>
                 </article>
                 <article class="hero__devices">
@@ -105,155 +108,135 @@
                 </article>
             </section>
             <section class="time container-full">
-                <h2 style="text-align:center;margin-bottom:10rem">MAIN FEATURES</h2>
+                <h2 class="mainFeatText text-up anim" data-wow-delay=".3s">MAIN FEATURES</h2>
                 <div class="time__graphic">
-                    <div class="first">
-                        <table>
-                            <tr>
-                                <td><div data-trial="1" class="trBtns"><img src="assets/img/homeTrialDemo/trial1.png"></div></td>
-                                <td><div data-trial="2" class="trBtns"><img src="assets/img/homeTrialDemo/trial2.png"></div></td>
-                            </tr>
-                            <tr>
-                                <td><div data-trial="3" class="trBtns"><img src="assets/img/homeTrialDemo/trial3.png"></div></td>
-                                <td><div data-trial="4" class="trBtns"><img src="assets/img/homeTrialDemo/trial4.png"></div></td>
-                            </tr>
-                            <tr>
-                                <td><div data-trial="5" class="trBtns"><img src="assets/img/homeTrialDemo/trial5.png"></div></td>
-                                <td><div data-trial="6" class="trBtns"><img src="assets/img/homeTrialDemo/trial6.png"></div></td>
-                            </tr>
-                            <tr>
-                                <td><div data-trial="7" class="trBtns"><img src="assets/img/homeTrialDemo/trial7.png"></div></td>
-                                <td><div data-trial="8" class="trBtns"><img src="assets/img/homeTrialDemo/trial8.png"></div></td>
-                            </tr>
-                            <tr>
-                                <td><div data-trial="9" class="trBtns"><img src="assets/img/homeTrialDemo/trial9.png"></div></td>
-                                <td><div data-trial="10" class="trBtns"><img src="assets/img/homeTrialDemo/trial10.png"></div></td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="second">
-                        <table>
-                            <tr>
-                                <td>
-                                    <div id="rotate-model-clockwise" class="rotate-btn"><svg width="37px" height="36px" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="even-odd"><path d="M21.52.437l14.781 13.377-14.396 15.094-.097-7.175c-9.04 1.965-15.703 6.982-17.415 12.464l-.438 1.404H0V18.569c0-4.957 9.822-9.758 21.616-10.992L21.52.437z" fill="#FFF" fill-rule="nonzero"></path><path d="M2 33.601V18.569c0-3.27 8.892-8.26 21.641-9.162L23.581 5l9.856 8.92-9.599 10.063-.063-4.647C12.227 21.11 4.443 27.331 2.485 33.601H2z" fill="gray"></path></g></svg></div>                                    
-                                </td>
-                                <td>
-                                    <img data-slide="1" data-currentTrial="8" id="memodel-render" width="300" height="450" src="https://aws.me-tail.net/Render?shadows=true&amp;dimensions=576x864&amp;resample=300x450;29,43;547,821&amp;viewpoint=0&amp;skin=bree_1/b9d8ddc1-4e83-4d9d-956d-9763eda6966d&amp;body=bree&amp;bodyShapeParameterization=tape&amp;ht=170&amp;wt=40&amp;chest=76&amp;waist=57&amp;hip=78&amp;shoulder=39&amp;insideLeg=81&amp;cup=6&amp;channels=rgba&amp;format=png&amp;camera=mondo&amp;ilk=wanda.2&amp;garments=fd66276e-6013-42c1-91f9-20fce228ab57,83fbbee5-c0a3-4e05-8259-3c7c8a2e52e2&amp;compositionMode=kisekae&amp;pose=pose-light-contrapposto&amp;ratify=0rc3fhkyr2hf">
-                                </td>
-                                <td>
-                                    <div id="rotate-model-anticlockwise" class="rotate-btn"><svg width="37px" height="36px" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="even-odd"><path d="M14.685 7.577l.096-7.14L0 13.814l14.396 15.094.098-7.175c9.04 1.965 15.702 6.982 17.414 12.464l.438 1.404h3.955V18.569c0-4.957-9.822-9.758-21.616-10.992z" fill="#FFF" fill-rule="nonzero"></path><path d="M34.437 33.601V18.569c0-3.27-8.893-8.26-21.641-9.162L12.855 5 3 13.92l9.599 10.063.063-4.647c11.547 1.774 19.332 7.995 21.29 14.265h.485z" fill="gray"></path></g></svg></div>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 leftCol">
+                            <div data-title="Tryy It!" data-trial="1" data-wow-delay=".2s" class="trBtns pull-right anim text-up randomHover"><img src="assets/img/homeTrialDemo/trial1.png"></div>
+                            <div data-title="Tryy It!" data-trial="2" data-wow-delay=".2s" class="trBtns pull-right anim text-up randomHover"><img src="assets/img/homeTrialDemo/trial2.png"></div>
+                            <div data-title="Tryy It!" data-trial="3" data-wow-delay=".2s" class="trBtns pull-right anim text-up randomHover"><img src="assets/img/homeTrialDemo/trial3.png"></div>
+                            <div data-title="Tryy It!" data-trial="4" data-wow-delay=".2s" class="trBtns pull-right anim text-up randomHover"><img src="assets/img/homeTrialDemo/trial4.png"></div>
+                            <div data-title="Tryy It!" data-trial="5" data-wow-delay=".2s" class="trBtns pull-right anim text-up randomHover"><img src="assets/img/homeTrialDemo/trial5.png"></div>
+                        </div>
+                        <div class="col-sm-5">
+                            <img data-slide="1" data-currentTrial="8" id="memodel-render" width="300" height="450" src="https://aws.me-tail.net/Render?shadows=true&amp;dimensions=576x864&amp;resample=300x450;29,43;547,821&amp;viewpoint=0&amp;skin=bree_1/b9d8ddc1-4e83-4d9d-956d-9763eda6966d&amp;body=bree&amp;bodyShapeParameterization=tape&amp;ht=170&amp;wt=40&amp;chest=76&amp;waist=57&amp;hip=78&amp;shoulder=39&amp;insideLeg=81&amp;cup=6&amp;channels=rgba&amp;format=png&amp;camera=mondo&amp;ilk=wanda.2&amp;garments=fd66276e-6013-42c1-91f9-20fce228ab57,83fbbee5-c0a3-4e05-8259-3c7c8a2e52e2&amp;compositionMode=kisekae&amp;pose=pose-light-contrapposto&amp;ratify=0rc3fhkyr2hf">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div id="rotate-model-clockwise" class="rotate-btn"><i class="fa fa-long-arrow-left fa-lg"></i></div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div id="rotate-model-anticlockwise" class="rotate-btn pull-left"><i class="fa fa-long-arrow-right fa-lg"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 rightCol">
+                            <div data-title="Tryy It!" data-trial="6"  data-wow-delay=".2s" class="trBtns pull-left anim text-up anim text-up"><img src="assets/img/homeTrialDemo/trial6.png"></div>
+                            <div data-title="Tryy It!" data-trial="7"  data-wow-delay=".2s" class="trBtns pull-left anim text-up anim text-up"><img src="assets/img/homeTrialDemo/trial7.png"></div>
+                            <div data-title="Tryy It!" data-trial="8"  data-wow-delay=".2s" class="trBtns pull-left anim text-up anim text-up"><img src="assets/img/homeTrialDemo/trial8.png"></div>
+                            <div data-title="Tryy It!" data-trial="9"  data-wow-delay=".2s" class="trBtns pull-left anim text-up anim text-up"><img src="assets/img/homeTrialDemo/trial9.png"></div>
+                            <div data-title="Tryy It!" data-trial="10" data-wow-delay=".2s" class="trBtns pull-left anim text-up anim text-up"><img src="assets/img/homeTrialDemo/trial10.png"></div>
+                        </div>
+                    </div>                    
                 </div>
                 <div class="wrapper">
                     <div class="time__content homepage__content">
                         <div class="homepage__content__icon"> <img src="assets/svg/hanger.svg" alt="Phone Icon" />
                             <div class="homepage__content__icon__wave"></div>
                         </div>
-                        <h2 class="anim text-up blue">Trying on without taking off</h2>
-                        <p class="anim text-up" data-wow-delay=".2s">An awesome platform for bridging the gap between the ONLINE and OFFLINE retail experience.</p>
+                        <h2 class="anim text-up blue bolder">Trying on without taking off</h2>
+                        <p class="anim text-up" data-wow-delay=".2s">An awesome platform for bridging the gap between <br>the ONLINE and OFFLINE retail experience.</p>
                     </div>
                 </div>
             </section>
             <section class="meetings container-full">
                 <div class="wrapper">
                     <div class="meetings__mobile">
-                        <img class="iphone" src="https://www.brring.com/wp-content/themes/brring-website/img/iphone-clay.png" alt="iPhone Mockup" /> 
+                        <!-- <img class="iphone" src="https://www.brring.com/wp-content/themes/brring-website/img/iphone-clay.png" alt="iPhone Mockup" /> 
                         <img style="height:70%" class="background" src="assets/img/features2.jpg" alt="iPhone Lockscreen" />                         
+                         -->
+                         <div class="row">
+                            <div class="col-sm-12" id="bigCircles">
+                                <span id="size" class="infoCircle circle1">Sizes</span>
+                                <span id="brand" class="infoCircle circle2">Brands</span>
+                                <span id="color" class="infoCircle circle3">Colors</span>
+                                <span id="avail" class="infoCircle circle4">Availablity</span>
+                                <span id="price" class="infoCircle circle5">Price</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="meetings__content homepage__content">
                         <div class="homepage__content__icon"> <img src="assets/img/feature2_icon.png" alt="Bell Icon" />
                             <div class="homepage__content__icon__wave"></div>
                         </div>
-                        <h2 style="color:#a32864" class="anim text-up">User gets exact details of selected Items</h2>
-                        <p class="anim text-up" data-wow-delay=".2s">TRYY-IT provides essential item information, such as size, color, brand, availability and price.</p>
+                        <h2 style="color:#a32864" class="anim text-up bolder">User gets exact details of selected Items</h2>
+                        <p class="anim text-up" data-wow-delay=".2s">TRYY-IT provides essential item information, such as sizes, colors, brands, availability, price, etc.</p>
                     </div>
                 </div>
             </section>
-            <section style="margin-bottom:10rem" class="pricing container-full">
-                <div class="wrapper">                    
-                    <div class="pricing__content homepage__content">
-                        <div class="homepage__content__icon orange"> <img src="assets/img/feature2_icon.png" alt="Bell Icon" />
-                            <div class="homepage__content__icon__wave orange"></div>
+            <section class="pricing container-full">
+                <div class="container-fluid">                    
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1">
+                            <div class="homepage__content__icon orange"> 
+                                <img src="assets/img/feature2_icon.png" alt="Bell Icon" />
+                                <div class="homepage__content__icon__wave orange"></div>                                
+                            </div>
+                            <h2 style="color:#ff947f;text-align:left" class="anim text-up bolder">Awesome Softwares for intuitive Database Production and Management</h2>
+                            <p style="text-align:left" class="anim text-up" data-wow-delay=".2s">With just few simple photos of inventory items, TRYY-IT Inventory Tool creates photo-realistic 3D images within 7-10 minutes </br>(compared to 3-5 hours for competitors)</p>
                         </div>
-                        <h2 style="color:#ff947f" class="anim text-up">Awesome Softwares for intuitive Database Production and Management</h2>
-                        <p class="anim text-up" data-wow-delay=".2s">With just two simple front and back photos of inventory items, TRYY-IT Inventory Authoring Tool creates photo-realistic 3D images within 7-10 minutes </br>(compared to 3-5 hours for competitors)</p>
-                    </div>
-                    <article class="pricing__table">
-                        <img src="http://demos.creative-tim.com/now-ui-kit-pro/assets/img/presentation-page/table.jpg">
-                    </article>                        
+                        <div class="col-sm-6">
+                            <article class="pricing__table">
+                                <img src="assets/img/database.png">
+                            </article>
+                        </div>
+                    </div>                
                 </div>
             </section>
-            <section class="meetings container-full">
-                <div class="wrapper">
-                    <div class="meetings__mobile advrt">
-                        <div class="image-container">
-                            <img class="components-macbook" src="http://demos.creative-tim.com/now-ui-kit-pro/assets/img/ipad.png" alt="">
-                            <img class="table-img" src="http://demos.creative-tim.com/now-ui-kit-pro/assets/img/presentation-page/table.jpg" alt="">
-                            <img class="share-btn-img" src="http://demos.creative-tim.com/now-ui-kit-pro/assets/img/presentation-page/share-btn.jpg" alt="">
-                            <img class="coloured-card-btn-img" src="http://demos.creative-tim.com/now-ui-kit-pro/assets/img/presentation-page/coloured-card-with-btn.jpg" alt="">
-                            <img class="coloured-card-img" src="http://demos.creative-tim.com/now-ui-kit-pro/assets/img/presentation-page/coloured-card.jpg" alt="">                            
+            <section  class="meetings container-full meetings2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <img class="advertImg" src="http://www.robertoborse.it/wpimages/wpcde1888c.gif">
                         </div>
-                    </div>
-                    <div class="meetings__content homepage__content">
-                        <div class="homepage__content__icon green"> <img src="assets/img/feature2_icon.png" alt="Bell Icon" />
-                            <div class="homepage__content__icon__wave green"></div>
+                        <div class="col-md-4">
+                            <div class="meetings__content homepage__content">
+                                <div class="homepage__content__icon green"> <img src="assets/img/feature2_icon.png" alt="Bell Icon" />
+                                    <div class="homepage__content__icon__wave green"></div>
+                                </div>
+                                <h2 style="color:#FFE700" class="anim text-up bolder">Advertisement Features</h2>
+                                <p class="anim text-up" data-wow-delay=".2s">Utilize TRYY-IT to display your digital lookbook or as an advertisement display while in standby mode</p>
+                            </div>
                         </div>
-                        <h2 style="color:#4CAF50" class="anim text-up">Advertisement Features</h2>
-                        <p class="anim text-up" data-wow-delay=".2s">Utilize TRYY-IT to display your digital lookbook or as an advertisement display while in standby mode</p>
                     </div>
                 </div>
             </section>
-            <section class="demo container-full">
-                <img src="assets/img/demo.png">
-            </section>
-            <section class="signup container-full">
-                <h2 class="anim text-up">Let me know about TRYY-IT updates</h2>
-                <div class="anim text-up" data-wow-delay=".2s">
-                    <script type="text/javascript">
-                        (function() {
-                            if (!window.mc4wp) {
-                                window.mc4wp = {
-                                    listeners: [],
-                                    forms: {
-                                        on: function(event, callback) {
-                                            window.mc4wp.listeners.push({
-                                                event: event,
-                                                callback: callback
-                                            });
-                                        }
-                                    }
-                                }
-                            }
-                        })();
-                    </script>
-                    <form id="mc4wp-form-2" class="mc4wp-form mc4wp-form-23" method="post" data-id="23" data-name="Newsletter">
-                        <div class="mc4wp-form-fields">
-                            <input type="email" name="EMAIL" placeholder="Email me" required />
-                            <input type="submit" value="" />
-                            <label style="display: none !important;">Leave this field empty if you're human:
-                                <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" />
-                            </label>
-                            <input type="hidden" name="_mc4wp_timestamp" value="1512282945" />
-                            <input type="hidden" name="_mc4wp_form_id" value="23" />
-                            <input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-2" />
+            <section class="container-full page-template-app-mobile section--watch-app">
+                <div class="signup container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="http://24serversupport.com/~dubaimil/wp-content/uploads/2014/04/family.png">
                         </div>
-                        <div class="mc4wp-response"></div>
-                    </form>
+                        <div class="col-sm-6">
+                            <h2 class="white anim text-up bolder">See the results for yourself</h2>
+                            <p class="white anim text-up">Excite your shoppers with a taste of the future shopping experience.</p>
+                            <div class="anim text-up" data-wow-delay=".2s">
+                                <a class="callBtns"><span>Request a callback</span></a>
+                                <a class="callBtns"><span>Contact Us</span></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <footer class="footer clear" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
                 <div class="footer__container">
                     <div class="wrapper">
                         <div class="footer__logo">
-                            <a href="/"><img src="assets/img/tryyIt_Black.png" class="logo" alt="Brring Logo" />
+                            <a href="/"><img src="assets/img/logoBlack.png" class="logo" alt="Brring Logo" />
                             </a>
                         </div>
                         <div class="footer__menu">
                             <ul id="menu-footer-menu" class="menu">
-                                <li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-137"><a href="/features/">Features</a>
+                                <li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-137"><a href="/features.html">Features</a>
                                 </li>
                                 <li id="menu-item-80" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80"><a href="/about/">About Us</a>
                                 </li>
@@ -269,7 +252,7 @@
                     </div>
                 </div>
                 <div class="footer__copyright">
-                    <div class="wrapper"> © 2017 Virtual Techies Pvt Ltd. All rights reserved.</div>
+                    <div class="wrapper"> © 2018 Virtual Techies Pvt Ltd. All rights reserved.</div>
                 </div>
             </footer>
         </div>
