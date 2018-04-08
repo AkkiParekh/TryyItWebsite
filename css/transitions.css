@@ -1,0 +1,450 @@
+@media only screen and (min-width: 320px) {
+    .anim {
+        visibility: hidden;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s
+    }
+    @-webkit-keyframes sonarWave {
+        from {
+            opacity: .2
+        }
+        to {
+            -webkit-transform: scale(2);
+            transform: scale(2);
+            opacity: 0
+        }
+    }
+    @keyframes sonarWave {
+        from {
+            opacity: .2
+        }
+        to {
+            -webkit-transform: scale(2);
+            transform: scale(2);
+            opacity: 0
+        }
+    }
+    @keyframes phone-up {
+        from {
+            opacity: 0;
+            -webkit-transform: translateY(100%) rotate(0deg);
+            transform: translateY(100%) rotate(0deg);
+            -webkit-transition: all ease;
+            transition: all ease
+        }
+        to {
+            opacity: 1
+        }
+    }
+    @-webkit-keyframes phone-up {
+        from {
+            opacity: 0;
+            -webkit-transform: translateY(100%) rotate(0deg);
+            transform: translateY(100%) rotate(0deg);
+            -webkit-transition: all ease;
+            transition: all ease
+        }
+        to {
+            opacity: 1
+        }
+    }
+    .phone-up {
+        -webkit-animation-name: phone-up;
+        animation-name: phone-up;
+        -webkit-animation-duration: .8s;
+        animation-duration: .8s
+    }
+    @-webkit-keyframes shake {
+        10%, 90% {
+            -webkit-transform: translate3d(-53%, -50%, 0);
+            transform: translate3d(-53%, -50%, 0)
+        }
+        20%,
+        80% {
+            -webkit-transform: translate3d(-46%, -50%, 0);
+            transform: translate3d(-46%, -50%, 0)
+        }
+        30%,
+        50%,
+        70% {
+            -webkit-transform: translate3d(-58%, -50%, 0);
+            transform: translate3d(-58%, -50%, 0)
+        }
+        40%,
+        60% {
+            -webkit-transform: translate3d(-42%, -50%, 0);
+            transform: translate3d(-42%, -50%, 0)
+        }
+    }
+    @-webkit-keyframes swing {
+        0% {
+            -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg)
+        }
+        50% {
+            -webkit-transform: rotate(30deg);
+            transform: rotate(30deg)
+        }
+        100% {
+            -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg)
+        }
+    }
+    @keyframes swing {
+        0% {
+            -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg)
+        }
+        50% {
+            -webkit-transform: rotate(30deg);
+            transform: rotate(30deg)
+        }
+        100% {
+            -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg)
+        }
+    }
+    @-webkit-keyframes block-left {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(20%, 0, 0);
+            transform: translate3d(20%, 0, 0);
+            -webkit-transition: opacity ease, -webkit-transform ease;
+            transition: opacity ease, -webkit-transform ease;
+            transition: opacity ease, transform ease;
+            transition: opacity ease, transform ease, -webkit-transform ease
+        }
+        50% {
+            opacity: 1
+        }
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0)
+        }
+    }
+    @keyframes block-left {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(20%, 0, 0);
+            transform: translate3d(20%, 0, 0);
+            -webkit-transition: opacity ease, -webkit-transform ease;
+            transition: opacity ease, -webkit-transform ease;
+            transition: opacity ease, transform ease;
+            transition: opacity ease, transform ease, -webkit-transform ease
+        }
+        50% {
+            opacity: 1
+        }
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0)
+        }
+    }
+    .block-left {
+        -webkit-animation-name: block-left;
+        animation-name: block-left;
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s;
+        animation-delay: .4s;
+        -webkit-animation-delay: .4s
+    }
+    @-webkit-keyframes slight-up {
+        from {
+            opacity: 0;
+            transform: translateY(2vh) scale(0.97, .97);
+            -webkit-transform: translateY(2vh) scale(0.97, .97);
+            -webkit-transition: all cubic-bezier(0.76, 0, .18, 1);
+            transition: all cubic-bezier(0.76, 0, .18, 1)
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0px) scale(1, 1);
+            -webkit-transform: translateY(0px) scale(1, 1)
+        }
+    }
+    @keyframes slight-up {
+        from {
+            opacity: 0;
+            transform: translateY(2vh) scale(0.97, .97);
+            -webkit-transform: translateY(2vh) scale(0.97, .97);
+            -webkit-transition: all cubic-bezier(0.76, 0, .18, 1);
+            transition: all cubic-bezier(0.76, 0, .18, 1)
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0px) scale(1, 1);
+            -webkit-transform: translateY(0px) scale(1, 1)
+        }
+    }
+    .slight-up {
+        -webkit-animation-name: slight-up;
+        animation-name: slight-up;
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s
+    }
+    @-webkit-keyframes slight-down {
+        from {
+            opacity: 0;
+            transform: translateY(-2vh) scale(0.97, .97);
+            -webkit-transform: translateY(-2vh) scale(0.97, .97);
+            -webkit-transition: all cubic-bezier(0.76, 0, .18, 1);
+            transition: all cubic-bezier(0.76, 0, .18, 1)
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0px) scale(1, 1);
+            -webkit-transform: translateY(0px) scale(1, 1)
+        }
+    }
+    @keyframes slight-down {
+        from {
+            opacity: 0;
+            transform: translateY(-2vh) scale(0.97, .97);
+            -webkit-transform: translateY(-2vh) scale(0.97, .97);
+            -webkit-transition: all cubic-bezier(0.76, 0, .18, 1);
+            transition: all cubic-bezier(0.76, 0, .18, 1)
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0px) scale(1, 1);
+            -webkit-transform: translateY(0px) scale(1, 1)
+        }
+    }
+    .slight-down {
+        -webkit-animation-name: slight-down;
+        animation-name: slight-down;
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s
+    }
+    @-webkit-keyframes text-up {
+        from {
+            opacity: 0;
+            -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+            -webkit-transition: opacity .6s ease-in-out, -webkit-transform .6s ease-in-out;
+            transition: opacity .6s ease-in-out, -webkit-transform .6s ease-in-out;
+            transition: transform .6s ease-in-out, opacity .6s ease-in-out;
+            transition: transform .6s ease-in-out, opacity .6s ease-in-out, -webkit-transform .6s ease-in-out
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            transform: translateY(0)
+        }
+    }
+    @keyframes text-up {
+        from {
+            opacity: 0;
+            -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+            -webkit-transition: opacity .6s ease-in-out, -webkit-transform .6s ease-in-out;
+            transition: opacity .6s ease-in-out, -webkit-transform .6s ease-in-out;
+            transition: transform .6s ease-in-out, opacity .6s ease-in-out;
+            transition: transform .6s ease-in-out, opacity .6s ease-in-out, -webkit-transform .6s ease-in-out
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            transform: translateY(0)
+        }
+    }
+    .text-up {
+        -webkit-animation-name: text-up;
+        animation-name: text-up;
+        -webkit-animation-duration: .6s;
+        animation-duration: .6s
+    }
+    @-webkit-keyframes slow-fade {
+        from {
+            opacity: 0;
+            -webkit-transition: opacity cubic-bezier(0.445, .05, .55, .95);
+            transition: opacity cubic-bezier(0.445, .05, .55, .95)
+        }
+        to {
+            opacity: 1
+        }
+    }
+    @keyframes slow-fade {
+        from {
+            opacity: 0;
+            -webkit-transition: opacity cubic-bezier(0.445, .05, .55, .95);
+            transition: opacity cubic-bezier(0.445, .05, .55, .95)
+        }
+        to {
+            opacity: 1
+        }
+    }
+    .slow-fade {
+        -webkit-animation-name: slow-fade;
+        animation-name: slow-fade;
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s
+    }
+}
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+@-webkit-keyframes pulsing {
+    from {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+    to {
+        -webkit-transform: scale(1.02, 1.02);
+        transform: scale(1.02, 1.02)
+    }
+}
+@keyframes pulsing {
+    from {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+    to {
+        -webkit-transform: scale(1.02, 1.02);
+        transform: scale(1.02, 1.02)
+    }
+}
+
+#load {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999999999;
+    background-color: #f9f9f9
+}
+#load div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 27px;
+    width: 100px
+}
+@media only screen and (min-width: 1023px) {
+    #load div {
+        height: 45px;
+        width: 180px
+    }
+}
+#load img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0
+}
+#load img:first-child {
+    z-index: -2;
+    -webkit-animation: glitch .4s cubic-bezier(.25, .46, .45, .94) both infinite;
+    animation: glitch .4s cubic-bezier(.25, .46, .45, .94) both infinite;
+    opacity: .6
+}
+#load img:last-child {
+    z-index: -1;
+    -webkit-animation: glitch .4s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
+    animation: glitch .4s cubic-bezier(.25, .46, .45, .94) reverse both infinite
+}
+@-webkit-keyframes glitch {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+    20% {
+        -webkit-transform: translate(-1%, 1%);
+        transform: translate(-1%, 1%)
+    }
+    40% {
+        -webkit-transform: translate(-1%, -1%);
+        transform: translate(-1%, -1%)
+    }
+    60% {
+        -webkit-transform: translate(1%, 1%);
+        transform: translate(1%, 1%)
+    }
+    80% {
+        -webkit-transform: translate(1%, -1%);
+        transform: translate(1%, -1%)
+    }
+    to {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+}
+@keyframes glitch {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+    20% {
+        -webkit-transform: translate(-1%, 1%);
+        transform: translate(-1%, 1%)
+    }
+    40% {
+        -webkit-transform: translate(-1%, -1%);
+        transform: translate(-1%, -1%)
+    }
+    60% {
+        -webkit-transform: translate(1%, 1%);
+        transform: translate(1%, 1%)
+    }
+    80% {
+        -webkit-transform: translate(1%, -1%);
+        transform: translate(1%, -1%)
+    }
+    to {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+}
+.bt-spin {
+    -webkit-animation: bt-spin 2s infinite linear;
+    animation: bt-spin 2s infinite linear
+}
+.bt-pulse {
+    -webkit-animation: bt-spin 1s infinite steps(8);
+    animation: bt-spin 1s infinite steps(8)
+}
+@-webkit-keyframes bt-spin {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+@keyframes bt-spin {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
