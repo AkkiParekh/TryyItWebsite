@@ -54,7 +54,7 @@
 }
 @media (min-width: 1200px) {
     .home .scroll-downs {
-        top:-15vh;
+        top:0vh;
     }
 }
 .home .mousey {

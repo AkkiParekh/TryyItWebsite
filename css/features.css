@@ -187,11 +187,11 @@
 	content:'';
 	position:absolute;
 	right:0;
-	background:url('../img/newImg/bg8.png');               
+	background:url('../img/newImg/bg2.png');               
 	background-size:cover;
 	background-repeat:no-repeat;
-	background-position:top right;              
-	min-height:120vh;
+	background-position:center left;              
+	min-height:100vh;
 	margin-top:-15%;
 	width:100%;
 	z-index:-1;
@@ -213,8 +213,7 @@
 	padding: 7rem 0 0rem;
 	margin: 1rem 0 5rem;
 	/*background: url(../img/bgs/platform.png);*/
-	/*background-position: top;*/
-	background: url(../img/bgs/platform.png) top no-repeat, url(../img/bgs/platform-reverse.png) bottom no-repeat;
+	background-position: top;
 	background-size: 100%;	
 	background-repeat: no-repeat;
 	background-attachment: inherit;
@@ -225,12 +224,12 @@
 .feat #pills-customers .benefitsCircle{
 	min-width:60px;
 	min-height:60px;
-	background-color: #4558BF;
+	background-image: linear-gradient(to bottom right,#FF6EAA 20%,#8989FF)!important;
 	z-index:2;
 }
 
 .feat #pills-customers .line {
-    max-width: 8px !important;
+    max-width: 10px !important;
     position: absolute !important;
     left: 0;
     right: 0;
