@@ -43,6 +43,29 @@ $(document).ready(function(){
 			});
 		});
 	}
+	else if($("body").hasClass("about")){
+		var anim;
+	    var animData = {
+	        container: document.getElementById('bodymovin'),
+	        renderer: 'svg',
+	        loop: true,
+	        autoplay: true,
+	        rendererSettings: {
+	            progressiveLoad:false
+	        },
+	        path: '../svg/moments.json'
+	    };
+	    anim = bodymovin.loadAnimation(animData);
+		
+		//Lines added by Basil Robinson for testing
+		$ele = jQuery('#bodymovin');
+		$ele.css('opacity', '0');
+		anim.addEventListener('DOMLoaded', function(e) { 
+			console.log('SVG Anim loaded Successfully'); 
+			$ele.fadeTo(1000, 1); 
+		});		
+		anim.setSpeed(1);
+	}
 
 	$(window).resize(function() {
 		$(window).width() > 739 && $("body").removeClass("open");

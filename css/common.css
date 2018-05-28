@@ -232,3 +232,64 @@ button, button:focus{
 .curPoint{
     cursor:pointer;
 }
+
+.big-btn{
+    display: inline-block;
+    color: #fff;
+    line-height: 65px;
+    background: 0 0;
+    width: 250px;
+    border: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: rotateZ(0);
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    position: relative;
+    transition: all .3s ease;
+    outline: 0 none!important;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 1.5rem;    
+    text-decoration: none!important;
+}
+.big-btn:before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    border-radius: 50px;
+    right: 0;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    border: 6px solid rgba(255,255,255,0);
+}
+.big-btn span {
+    display: block;
+    z-index: 9;
+    height: 65px;
+    background-image: -webkit-gradient(linear,left top,right top,from(#f75d53),color-stop(1%,#f75d53),to(#fa8981));
+    background-image: -webkit-linear-gradient(left,#f75d53 0,#f75d53 1%,#fa8981 100%);
+    background-image: linear-gradient(to right,#f75d53 0,#f75d53 1%,#fa8981 100%);
+    border-radius: 33px;
+    -webkit-box-shadow: 3.1px 11.6px 38px rgba(254,56,43,.32);
+    box-shadow: 3.1px 11.6px 38px rgba(254,56,43,.32);
+    outline:0 none!important;
+    text-decoration: none!important;
+    color: #fff;
+}
+.big-btn:hover{
+    text-decoration: none!important;
+    color: #fff;
+    outline:0 none!important;
+}
+.big-btn:hover:before {
+    margin: -12px;
+    -webkit-transition: all .4s linear;
+    transition: all .4s linear;
+    opacity: 0;
+    border-color: #f75d53;
+}
